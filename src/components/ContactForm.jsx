@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import styles from "./ContactForm.module.css";
 
 import { useDispatch } from "react-redux";
-import { addContact } from "../redux/contactsOps";
+import { addContact } from "../redux/contacts/contactsOps";
 /* import { FaUser } from "react-icons/fa"; */
 
 /* const numberVal = /([0-9]{3})[0-9]{3}-[0-9]{4}/; */
@@ -17,7 +17,6 @@ const validationSchema = Yup.object().shape({
     .min(3, "Еnter real number!")
     .max(50, "Too long")
     .required("Number is required"),
-  /*  .matches(numberVal) */
 });
 
 const ContactForm = () => {
@@ -42,7 +41,6 @@ const ContactForm = () => {
       <Form className={styles.form}>
         <div>
           <label className={styles.titel} htmlFor="name">
-            
             NAME
           </label>
           <Field className={styles.field} type="text" name="name"></Field>
