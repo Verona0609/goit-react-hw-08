@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import styles from "./ContactForm.module.css";
 
 import { useDispatch } from "react-redux";
-import { addContact } from "../redux/contacts/contactsOps";
+import { addContact } from "../redux/contacts/operations";
 /* import { FaUser } from "react-icons/fa"; */
 
 /* const numberVal = /([0-9]{3})[0-9]{3}-[0-9]{4}/; */
