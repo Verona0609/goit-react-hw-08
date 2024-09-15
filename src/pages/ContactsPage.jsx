@@ -1,11 +1,12 @@
 import ContactList from "../components/ContactList";
 import ContactForm from "../components/ContactForm";
 import SearchBox from "../components/SearchBox";
+import css from "./HomePage.module.css";
 
 const ContactsPage = () => {
   return (
     <div>
-      <h1>Your Contact</h1>
+      <h1 className={css.title}>Your Contact</h1>
       <ContactForm />
       <SearchBox />
       <ContactList />

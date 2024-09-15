@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+  border: 1px solid #ccc; /* Створює рамку */
+  box-shadow: 0 4px 8px rgba(248, 245, 245, 0.897); /* Створює тінь під хедером */
+  padding: 10px; /* Внутрішні відступи для вмісту */
+  background-color: rgb(12, 12, 12); /* Задній фон, щоб тінь була видимою */
+}

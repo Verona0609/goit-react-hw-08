@@ -1,25 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
 form {
-  border: 1px solid #3de1ec;
-  border-radius: 6px;
+  /*  border: 1px solid #0873df; */
+  box-shadow: 0 2px 20px rgba(248, 245, 245, 0.897); /* Тінь форми */
+  border-radius: 10px;
   margin-bottom: 20px;
   width: 310px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  color: white;
 }
+
 .buttonForm {
   margin-left: 80px;
-  background-color: #3de1ec;
-  border: 1px solid #c1c0c0;
-  border-radius: 4px;
+  background-color: rgb(0, 106, 255);
+  border: 1px solid rgb(0, 106, 255);
   color: rgb(249, 246, 246);
   width: 150px;
-  height: 30px;
+  height: 40px;
+  /* box-shadow: 0 4px 30px rgb(39, 3, 300); */
+  border-radius: 10px;
 }
 
 .error {
-  border: 2px solid #eb0808;
   color: #eb0808;
   border-radius: 2px;
   width: 200px;
@@ -33,4 +40,13 @@ input {
   margin-bottom: 20px;
   border-radius: 4px;
   border: 1px solid #4e4f4f;
+  border-radius: 4px;
+  border: 1px solid #6666697e;
+  background-color: black;
+  /* box-shadow: 0 4px 20px rgb(39, 3, 300); */
+  color: aliceblue;
+}
+
+.title {
+  color: white;
 }

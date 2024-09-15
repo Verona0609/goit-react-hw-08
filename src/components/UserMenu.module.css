@@ -1,0 +1,16 @@
+.welcome {
+  margin: 12px;
+  color: rgb(240, 234, 234);
+  font-size: larger;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: end;
+}
+
+.buttonout {
+  margin: 12px;
+}

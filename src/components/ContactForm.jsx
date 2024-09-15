@@ -12,11 +12,11 @@ const validationSchema = Yup.object().shape({
   name: Yup.string()
     .min(3, "Еnter real name!")
     .max(50, "Too Long!")
-    .required("Name is required"),
+    .required("Name is required!"),
   number: Yup.string()
     .min(3, "Еnter real number!")
     .max(50, "Too long")
-    .required("Number is required"),
+    .required("Number is required!"),
 });
 
 const ContactForm = () => {
@@ -33,37 +33,51 @@ const ContactForm = () => {
 
   const initialValues = { name: "", number: "" };
   return (
-    <Formik
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      onSubmit={handleSubmit}
-    >
-      <Form className={styles.form}>
-        <div>
-          <label className={styles.titel} htmlFor="name">
-            NAME
-          </label>
-          <Field className={styles.field} type="text" name="name"></Field>
-          <ErrorMessage className={styles.error} name="name" component="span" />
-        </div>
+    <div className={styles.container}>
+      <Formik
+        initialValues={initialValues}
+        validationSchema={validationSchema}
+        onSubmit={handleSubmit}
+      >
+        <Form className={styles.form}>
+          <div>
+            <label className={styles.titel} htmlFor="name" placeholder="NAME">
+              <ErrorMessage
+                className={styles.error}
+                name="name"
+                component="span"
+              />
+            </label>
+            <Field
+              className={styles.field}
+              type="text"
+              name="name"
+              placeholder="Name"
+            ></Field>
+          </div>
 
-        <div>
-          <label className={styles.titel} htmlFor="number">
-            NUMBER
-          </label>
-          <Field className={styles.field} type="number" name="number"></Field>
-          <ErrorMessage
-            className={styles.error}
-            name="number"
-            component="span"
-          />
-        </div>
+          <div>
+            <label className={styles.titel} htmlFor="number">
+              <ErrorMessage
+                className={styles.error}
+                name="number"
+                component="span"
+              />
+            </label>
+            <Field
+              className={styles.field}
+              type="number"
+              name="number"
+              placeholder="Number"
+            ></Field>
+          </div>
 
-        <button className={styles.buttonForm} type="submit">
-          ADD CONTACT
-        </button>
-      </Form>
-    </Formik>
+          <button className={styles.buttonForm} type="submit">
+            ADD CONTACT
+          </button>
+        </Form>
+      </Formik>
+    </div>
   );
 };
 

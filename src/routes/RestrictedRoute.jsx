@@ -2,7 +2,7 @@ import { Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectIsLoggedIn } from "../redux/auth/selectors"; // Замініть на правильний селектор
 
-const RestrictedRoute = ({ component: Component }) => {
+const RestrictedRoute = ({ element: Component }) => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
 
   return !isLoggedIn ? <Component /> : <Navigate to="/contacts" />;

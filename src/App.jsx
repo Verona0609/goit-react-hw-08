@@ -37,15 +37,15 @@ const App = () => {
                   <Route path="/" element={<HomePage />} />
                   <Route
                     path="/register"
-                    element={<RestrictedRoute component={RegisterPage} />}
+                    element={<RestrictedRoute element={RegisterPage} />}
                   />
                   <Route
                     path="/login"
-                    element={<RestrictedRoute component={LoginPage} />}
+                    element={<RestrictedRoute element={LoginPage} />}
                   />
                   <Route
                     path="/contacts"
-                    element={<PrivateRoute component={ContactsPage} />}
+                    element={<PrivateRoute element={ContactsPage} />}
                   />
                   <Route path="*" element={<NotFoundPage />} />
                 </Routes>

@@ -8,16 +8,16 @@ const Contact = ({ id, name, number }) => {
   const dispatch = useDispatch();
 
   return (
-    <>
+    <div className={styles.container}>
       <li className={styles.item}>
         <div>
           <p>
-            <FaUser style={{ marginRight: "10px" }} />
+            <FaUser style={{ marginRight: "10px", color: "white" }} />
             {name}
           </p>
 
           <p>
-            <FaPhone style={{ marginRight: "10px" }} />
+            <FaPhone style={{ marginRight: "10px", color: "white" }} />
             {number}
           </p>
         </div>
@@ -28,7 +28,7 @@ const Contact = ({ id, name, number }) => {
           Delete
         </button>
       </li>
-    </>
+    </div>
   );
 };
 

@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  justify-content: center;
-  display: flex;
 
-  background-color: #ffff;
+  /* display: flex;
+  justify-content: center; */
+
+  background-color: #070707;
 }
 
 h1 {

@@ -1,19 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
 .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #0df3f3;
+  border: 1px solid #0765f1;
   border-radius: 6px;
   margin-bottom: 4px;
   width: 250px;
+  color: aliceblue;
 }
 
 button {
   margin-right: 10px;
   cursor: pointer;
-  background-color: #0df3f3;
-  border: 1px solid #b8baba;
+  background-color: rgb(0, 106, 255);
+  border: 1px solid rgb(0, 106, 255);
   border-radius: 4px;
-  color: white;
+  color: rgb(250, 247, 247);
   height: 25px;
+}
+
+button:hover {
+  cursor: pointer;
 }

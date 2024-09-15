@@ -1,7 +1,13 @@
+.conteinerheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+}
+
 .link {
-  /*  display: flex; */
-  /* align-items: center; */
-  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px;
   color: white;
   font-size: larger;
@@ -17,8 +23,4 @@
 .link:hover {
   color: rgb(0, 106, 255);
   text-decoration: underline;
-}
-
-.contact {
-  padding: 0 50px 0 50px;
 }

@@ -3,6 +3,8 @@ import clsx from "clsx";
 import { NavLink } from "react-router-dom";
 import { selectIsLoggedIn } from "../redux/auth/selectors";
 import css from "./Navigation.module.css";
+import UserMenu from "./UserMenu";
+import AuthNav from "./AuthNav";
 
 const Navigation = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
@@ -23,9 +25,10 @@ const Navigation = () => {
             return clsx(css.link, isActive && css.active);
           }}
         >
-          Contacts
+          <span className={css.contact}>Contacts</span>
         </NavLink>
       )}
+      {isLoggedIn ? <UserMenu /> : <AuthNav />}
     </>
   );
 };
