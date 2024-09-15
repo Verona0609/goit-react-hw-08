@@ -6,7 +6,7 @@ import css from "./HomePage.module.css";
 const ContactsPage = () => {
   return (
     <div>
-      <h1 className={css.title}>Your Contact</h1>
+      <h1 className={css.title}>Your Contacts</h1>
       <ContactForm />
       <SearchBox />
       <ContactList />
