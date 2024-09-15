@@ -22,7 +22,6 @@ button {
   color: rgb(250, 247, 247);
   height: 25px;
 }
-
 button:hover {
   cursor: pointer;
 }
